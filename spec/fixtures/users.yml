@@ -1,0 +1,4 @@
+user1:
+  id: 1
+  username: coolhuman
+  encrypted_password: "$2a$10$jhp1mg2tzWpBqphAGvdDRuiTk0JayCRR1uzs95TzmhxZOvNJSeZa6" # whatever

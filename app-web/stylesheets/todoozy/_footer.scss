@@ -1,0 +1,47 @@
+$footer-height: 125px;
+
+#container {
+  padding-bottom: $footer-height;
+}
+
+.content-wrapper {
+  @extend %full-height;
+}
+
+#footer {
+  position: relative;
+  margin-top: -$footer-height;
+  height: $footer-height;
+  width: 100%;
+  background-color: $lighter-gray;
+  border-top: 1px solid $light-gray;
+  clear: both;
+  display: none;
+}
+
+.fox-facts {
+  width: 400px;
+  font-size: 130%;
+  margin: 30px auto 0 auto;
+  color: $green;
+  text-shadow: 1px 1px #fff;
+}
+
+.fox-facts .icon {
+  color: $medium-gray;
+  font-size: 48px;
+  float: left;
+  margin-left: -48px;
+  margin-top: -12px;
+}
+
+.fox-facts .text {
+  font-style: oblique;
+  font-weight: 550;
+}
+
+.fox-facts .text h4 {
+  font-size: 125%;
+  margin-bottom: 0;
+  font-weight: 900;
+}

@@ -1,0 +1,17 @@
+.panel-heading-fox {
+  background: $medium-gray;
+  border-top-right-radius: $base-unit-quarter;
+  border-top-left-radius: $base-unit-quarter;
+  color: $dark-gray;
+  padding: $base-unit-half $base-unit;
+}
+
+.panel-title-big {
+  font-size: 22px;
+  margin: 0;
+}
+
+.panel-body-fox {
+  background: lighten($medium-gray, 3%);
+  margin-top: $base-unit-quarter;
+}

@@ -1,0 +1,6 @@
+<div id="breadcrumbs" class="breadcrumbs">
+  <div ng-repeat="crumb in breadcrumbs">
+    <span ng-if="!$last"><a ui-sref="{{ crumb.uiSref }}">{{ crumb.name }}</a>&nbsp;/&nbsp;</span>
+    <span ng-if="$last">{{ crumb.name }}</span>
+  </div>
+</div>

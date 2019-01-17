@@ -1,0 +1,9 @@
+.list-group-item {
+  &:hover {
+    background: $medium-gray;
+  }
+}
+
+.list-group-alt-text {
+  font-size: 14px;
+}

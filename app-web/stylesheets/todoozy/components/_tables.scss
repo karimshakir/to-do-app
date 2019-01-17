@@ -1,0 +1,64 @@
+.width-icon {
+  width: 3%;
+}
+
+.width-one-twentieth {
+  width: 5%;
+}
+
+.width-one-tenth {
+  width: 10%;
+}
+
+.width-one-fifth {
+  width: 20%;
+}
+
+.width-three-tenths {
+  width: 30%;
+}
+
+.width-min-150 {
+  width: 150px;
+}
+
+.width-min-50 {
+  width: 50px;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: $medium-gray;
+
+  &.selected {
+    color: #fff;
+    background-color: $blue;
+    i {
+      color: #fff;
+      background-color: $blue;
+    }
+  }
+}
+
+.tablesort-sortable {
+  background-color: $light-gray;
+}
+
+table {
+  .tablesort-asc,
+  .tablesort-desc {
+    background-color: $medium-gray;
+  }
+}
+
+.table-wrap.scrollable {
+  border: 2px solid $support-gray;
+  max-height: 700px;
+  overflow-y: auto;
+  margin-bottom: $base-unit;
+  position: relative;
+  width: 90%;
+
+  &.short-list {
+    max-height: 500px;
+  }
+}

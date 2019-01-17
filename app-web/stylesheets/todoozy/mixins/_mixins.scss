@@ -1,0 +1,19 @@
+@mixin transition($args...) {
+  transition: $args;
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+// Copy of Bootstrap's clearfix
+@mixin clearfix() {
+  &::before,
+  &::after {
+    content: ' '; // 1
+    display: table; // 2
+  }
+  &::after {
+    clear: both;
+  }
+}

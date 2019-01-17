@@ -1,0 +1,46 @@
+<div>
+  <form class="form-horizontal" name="newToDoItem" ng-submit="submit()">
+
+    <div class="form-group">
+      <label class="col-sm-1 control-label" for="toDoItem.title">Title:</label>
+      <div class="col-sm-6">
+        <input type="text"
+               class="form-control"
+               ng-model="toDoItem.title"
+               required
+               name="toDoItem.title"
+               id="toDoItem.title" />
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-sm-1 control-label" for="toDoItem.description">Description:</label>
+      <div class="col-sm-6">
+        <textarea type="text"
+               ng-model="toDoItem.description"
+               class="form-control"
+               name="toDoItem.description"
+               id="toDoItem.description" />
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-sm-1 control-label" for="toDoItem.priority">Priority:</label>
+      <div class="col-sm-6">
+        <input type="text"
+               class="form-control"
+               ng-model="toDoItem.priority"
+               required
+               name="toDoItem.priority"
+               id="toDoItem.priority" />
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-sm-6 col-sm-offset-1">
+        <h1> <======================I'M HERE ==========I'M HERE======I'M HERE======================> </h1>
+        <button type="submit" ng-disabled="submitting" class="btn btn-success">Submit</button><cylon for="submitting" />
+      </div>
+    </div>
+  </form>
+</div>

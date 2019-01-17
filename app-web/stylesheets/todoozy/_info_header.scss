@@ -1,0 +1,89 @@
+.breadcrumbs { // .breadcrumbs whether within or without a info-header-header
+  @extend %display-flex;
+  @extend %center-flex-vertical;
+}
+
+// lives outside the info-header component
+.info-header-main {
+  @extend %zero-spacing;
+  margin: $base-unit-half 10px $base-unit $toolbar-width + 60px;
+  position: relative;
+  top: 120px;
+}
+
+.info-header {
+  @extend %zero-spacing;
+  @extend %small-rounded-corners;
+  border: 2px solid $medium-gray;
+}
+
+.info-header-header { // this is the header of the info-header
+  @extend %display-flex;
+  @extend %small-rounded-corners;
+  @extend %zero-spacing;
+  background-color: $medium-gray;
+  padding: $base-unit-half;
+}
+
+.info-header-header .breadcrumbs { // .breadcrumbs will elsewhere exists outside the info header header
+  flex: 6 0 0;
+  flex-wrap: wrap;
+}
+
+.info-header-status-grid {
+  @extend %display-flex;
+  @extend %center-flex-vertical;
+  @extend %small-rounded-corners;
+  background-color: $lighter-gray;
+  flex-wrap: wrap;
+  flex: 4 0 0;
+  .status {
+    @extend %display-flex;
+    @extend %center-flex-vertical;
+    @extend %zero-spacing;
+    padding: $base-unit-quarter $base-unit-half;
+    width: 50%;
+  }
+  .status-label {
+    @extend %zero-spacing;
+    padding-right: $base-unit-half;
+  }
+  .status-value {
+    font-weight: $font-weight-bold;
+  }
+  .status.warning {
+    .status-value {
+      color: $warning-red;
+    }
+  }
+  .status.full-width {
+    width: 100%;
+  }
+}
+
+.info-header-control {
+  @extend %display-flex;
+  @extend %center-flex-vertical;
+  @extend %center-flex-horizontal;
+  flex: 0 0 100px;
+  &:hover {
+    cursor: pointer;
+  }
+  .icon {
+    color: $dark-gray;
+    font-size: 24px;
+  }
+  span {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+.info-header-content { // this is the header of the info-header
+  @extend %zero-spacing;
+  padding: $base-unit-half;
+  .accordion-toggle {
+    cursor: pointer;
+  }
+}
+

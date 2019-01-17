@@ -1,0 +1,33 @@
+<h1>To Do <cylon for="items" /></h1>
+
+<a ui-sref="itemsNew" class="btn btn-success">New To Do Item</a>
+
+<br /> <br />
+
+<div class="table-wrap scrollable" ts-wrapper>
+  <table class="table table-striped" ts-wrapper>
+    <thead>
+      <tr>
+        <th ts-criteria="title" ts-default>
+          Title
+        </th>
+
+        <th class="width-one-fifth" ts-criteria="priority">
+          Priority
+        </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr class="" ng-repeat="toDoItem in toDoItems | filter: { complete_flag: false }" ts-repeat>
+        <td>
+          <a ui-sref="itemsShow({itemId: toDoItem.id})">{{ toDoItem.title }}</a>
+        </td>
+
+        <td class="width-one-fifth">
+          <div>{{ toDoItem.priority }}</div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

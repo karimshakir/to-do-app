@@ -1,0 +1,27 @@
+<div>
+  <div ng-if="!toDoItem.title">
+    <h1><cylon for="item"/> Waiting for data....</h1>
+  </div>
+  <div ng-if="toDoItem.title">
+    <h1>To Do: {{ toDoItem.title }}</h1>
+    <div class="row margin-bottom">
+      <div class="col-sm-1"><b>Description: </b></div>
+      <div class="col-sm-8">
+        {{ toDoItem.description }}
+      </div>
+    </div>
+    <div class="row margin-bottom">
+      <div class="col-sm-1"><b>Priority: </b></div>
+      <div class="col-sm-8">
+        {{ toDoItem.priority }}
+      </div>
+    </div>
+    <div class="row margin-bottom">
+      <div class="col-sm-1"><b>Complete?: </b></div>
+      <div class="col-sm-8">
+        <span ng-if="toDoItem.complete_flag">Completed!</span>
+        <span ng-if="!toDoItem.complete_flag">Not Completed</span>
+      </div>
+    </div>
+  </div>
+</div>

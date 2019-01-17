@@ -1,0 +1,24 @@
+#bulk-assignment {
+
+  .multi-select {
+    @include clearfix();
+
+    div.buttons {
+      width: 150px;
+      float: left;
+      padding-top: 20px;
+    }
+
+    button {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    select {
+      float: left;
+      width: 450px;
+    }
+  }
+}
+

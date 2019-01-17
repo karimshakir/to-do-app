@@ -1,0 +1,49 @@
+.fox-alerts {
+  font-family: Tahoma, Geneva, Arial, sans-serif;
+  font-size: 11px;
+  position: fixed;
+  top: 135px;
+  left: 50%;
+  margin-left: -200px;
+}
+
+.fox-alert-box {
+  color: #555;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+  margin: 10px;
+  width: 400px;
+  display: none;
+}
+
+.fox-alert-box {
+  &.in {
+    display: block;
+    z-index: 1000 !important;
+  }
+
+  .fox-important {
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+}
+
+.fox-alert-error {
+  background: #ffecec;
+  border: 1px solid #f5aca6;
+}
+
+.fox-alert-success {
+  border: 1px solid #a6ca8a;
+}
+
+.fox-alert-warn {
+  border: 1px solid #f2c779;
+  background: #fcf8e3;
+}
+
+.fox-alert-info {
+  border: 1px solid #8ed9f6;
+  background: #d9edf7;
+}

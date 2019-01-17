@@ -1,0 +1,70 @@
+.btn-fox-primary {
+  background: $dark-green;
+  border: darken($dark-green, 5%);
+  color: $white;
+
+  &:hover {
+    background: lighten($dark-green, 10%);
+    border: darken($dark-green, 5%);
+    color: $white;
+  }
+}
+
+.btn-fox-secondary {
+  background: $darker-gray;
+  color: $white
+}
+
+.btn-fox-link {
+  background: none;
+  color: $dark-gray;
+}
+
+.btn-default {
+  background: $light-gray;
+}
+
+.tabs {
+  .tab {
+    background: $dark-green;
+    border: darken($dark-green, 5%);
+    border-top-right-radius: 15px;
+    color: $white;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: $base-unit-quarter;
+    padding: $base-unit-half;
+
+    &:hover {
+      background: lighten($dark-green, 10%);
+    }
+  }
+  .tab.new .tab-select {
+    font-style: italic;
+
+    &::after {
+      content: '*'
+    }
+  }
+
+  .tab-remove {
+    padding: 0 $base-unit-quarter;
+
+    &:hover {
+      background: $warning-red;
+    }
+  }
+}
+
+.faux-btn {
+  cursor: default;
+
+  &.faux-btn-danger {
+    background: $warning-red;
+    color: $white;
+
+    &:hover {
+      background: $warning-red;
+    }
+  }
+}

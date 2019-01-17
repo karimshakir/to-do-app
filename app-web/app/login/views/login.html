@@ -1,0 +1,43 @@
+<div class="loginscreen">
+  <div class="main-wrapper clearfix">
+    <div class="logo">
+      <h1>ToDoozy</h1>
+    </div>
+
+    <h2>This one is going to be a todoozy</h2>
+
+    <p class="instructions">Please log in to the system using the credentials from the README.</p>
+
+    <todoozy-animation></todoozy-animation>
+
+    <form id="login-form" name="$parent.loginForm" ng-submit="login()">
+      <div class="error" ng-show="formErrorMsg" ng-bind="formErrorMsg">
+      </div>
+
+      <div class="form-group margin-top" ng-class="{ 'has-error': formSubmitted && !($scope.loginForm.username.$valid) }">
+        <input name="user.username"
+               class="form-field"
+               ng-model="user.username"
+               type="text"
+               placeholder="Username (Ex: jdoe)"
+               required />
+      </div>
+      <div class="form-group margin-top">
+        <input name="user.password"
+               class="form-field"
+               ng-model="user.password"
+               type="password"
+               placeholder="Password"
+               required />
+      </div>
+      <div class="form-controls">
+        <input type="submit" class="btn btn-lg submit-button" value="Come In" />
+      </div>
+    </form>
+
+  </div> <!-- #main -->
+
+  <div class="login-footer">
+    <p>&copy; {{currentYear}} Leapfrog Online | All rights reserved.</p>
+  </div>
+</div> <!-- #main-container -->

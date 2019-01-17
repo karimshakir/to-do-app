@@ -1,0 +1,70 @@
+# Sass-lint
+# Severity Levels
+# 0 = will not warn
+# 1 = will show warning
+# 2 = will show warning and fail
+rules:
+  border-zero: 0
+  no-color-keywords: 1
+  no-color-literals: 0
+  no-css-comments: 1
+  no-important: 0
+  no-url-protocols: 0
+  extends-before-declarations: 1
+  mixins-before-declarations: 1
+  one-declaration-per-line: 1
+  no-duplicate-properties: 1
+  empty-line-between-blocks: 0
+  clean-import-paths: 0
+  empty-args: 0
+  hex-length: 0
+  hex-notation: 0
+  no-ids: 0
+  indentation: 2
+  leading-zero: 0
+  no-mergeable-selectors: 0
+  function-name-format: 0
+  id-name-format: 0
+  nesting-depth: 2
+  force-pseudo-nesting: 0
+  force-element-nesting: 0
+  force-attribute-nesting: 0
+  property-sort-order: 0
+  no-qualifying-elements: 0
+  shorthand-values: 0
+  single-line-per-selector: 0
+  space-after-comma: 1
+  space-after-colon: 1
+  space-before-brace: 1
+  space-between-parens: 1
+  trailing-semicolon: 0
+  no-vendor-prefixes: 2
+  zero-unit: 0
+  class-name-format:
+    - 2
+    -
+      allow-leading-underscore: false
+      convention: hyphenatedlowercase
+  placeholder-name-format:
+    - 2
+    -
+      allow-leading-underscore: false
+      convention: hyphenatedlowercase
+  variable-name-format:
+    - 2
+    -
+      allow-leading-underscore: false
+      convention: hyphenatedlowercase
+  mixin-name-format:
+    - 2
+    -
+      allow-leading-underscore: false
+      convention: hyphenatedlowercase
+  quotes:
+    - 1
+    -
+      style: single
+  url-quotes:
+    - 1
+    -
+      style: single
