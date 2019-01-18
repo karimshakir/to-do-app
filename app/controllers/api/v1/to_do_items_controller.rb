@@ -23,10 +23,18 @@ module Api
         end
       end
 
+      def update
+        to_do_item = ToDoItem.find(params[:id])
+        to_do_item.update!(to_do_item_params)
+        respond_to do |format|
+          format.json { render json: { status: 'ok' } }
+        end
+      end
+
       private
 
       def to_do_item_params
-        params.require(:to_do_item).permit(:title, :description, :priority)
+        params.require(:to_do_item).permit(:title, :description, :priority, :complete_flag)
       end
     end
   end

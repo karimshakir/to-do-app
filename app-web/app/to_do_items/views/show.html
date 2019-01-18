@@ -3,7 +3,11 @@
     <h1><cylon for="item"/> Waiting for data....</h1>
   </div>
   <div ng-if="toDoItem.title">
-    <h1>To Do: {{ toDoItem.title }}</h1>
+    <h1>To Do: {{ toDoItem.title }}
+      <a ui-sref="itemsEdit({itemId: toDoItem.id})">
+        <i class="fa fa-edit"></i>
+      </a>
+    </h1>
     <div class="row margin-bottom">
       <div class="col-sm-1"><b>Description: </b></div>
       <div class="col-sm-8">

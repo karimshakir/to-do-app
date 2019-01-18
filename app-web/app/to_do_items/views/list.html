@@ -1,5 +1,9 @@
 <h1>To Do <cylon for="items" /></h1>
 
+  <div>
+    <img src="https://thumbs2.ebaystatic.com/d/l225/m/mnV1YeKe4zKoyoI-r6f4Gig.jpg" alt="">  
+  </div>
+
 <a ui-sref="itemsNew" class="btn btn-success">New To Do Item</a>
 
 <br /> <br />
@@ -21,6 +25,7 @@
     <tbody>
       <tr class="" ng-repeat="toDoItem in toDoItems | filter: { complete_flag: false }" ts-repeat>
         <td>
+          <a ui-sref="itemsEdit({itemId: toDoItem.id})"><i class="fa fa-edit"></i></a>
           <a ui-sref="itemsShow({itemId: toDoItem.id})">{{ toDoItem.title }}</a>
         </td>
 

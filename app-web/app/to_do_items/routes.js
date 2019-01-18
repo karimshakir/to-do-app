@@ -22,6 +22,15 @@ function toDoItemsRoutes($stateProvider) {
         },
       },
     })
+    .state('itemsEdit', {
+      url: '/items/{itemId}/edit',
+      views: {
+        main: {
+          templateUrl: 'todoozy/to_do_items/views/edit.html',
+          controller: 'ToDoEditController',
+        },
+      },
+    })
     .state('itemsShow', {
       url: '/items/{itemId}',
       views: {
