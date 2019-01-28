@@ -8,6 +8,7 @@ gem 'pg' # Postgres
 
 # Authentication
 gem 'devise'
+gem "activejob", ">= 5.2.1.1"
 
 group :development do
   gem 'annotate'
