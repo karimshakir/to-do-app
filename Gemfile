@@ -9,7 +9,7 @@ gem 'pg' # Postgres
 # Authentication
 gem 'devise'
 gem "activejob", ">= 5.2.1.1"
-
+gem "actionview", ">= 6.0.2.2"
 group :development do
   gem 'annotate'
   gem 'rake'
